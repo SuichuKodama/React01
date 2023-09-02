@@ -47,7 +47,7 @@ const Header = () => {
         <Typography variant="h6">
           ReactToDo
         </Typography>
-          {buttonRender()}
+          {/* {buttonRender()} */}
       </Toolbar>
     </AppBar>
   )
