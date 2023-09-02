@@ -49,7 +49,7 @@ const Dashboard = () => {
   const formRender = () => {
     let dom
     //ログインしていたら、TODOフォーム表示
-    if(dig(currentUser, 'currentUser' , 'uid')) {
+    // if(dig(currentUser, 'currentUser' , 'uid')) {
       dom =
       <form className={classes.form}>
         <TextField placeholder="ToDoName" className={classes.input} value={inputName} onChange={(event) => setInputName(event.currentTarget.value)} />
@@ -57,10 +57,10 @@ const Dashboard = () => {
         disabled={inputName.length > 0 ? false : true} 
         type="button" onClick={() => post()}>追加</Button>
       </form>
-    } else {
-    //ログインしていない場合は、ログインボタン表示
-      dom = <button onClick={signInWithGoogle}>ログイン</button>
-    }
+    // } else {
+    // //ログインしていない場合は、ログインボタン表示
+    //   dom = <button onClick={signInWithGoogle}>ログイン</button>
+    // }
     return dom
   }
 

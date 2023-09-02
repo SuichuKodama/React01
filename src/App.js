@@ -9,11 +9,11 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <AuthProvider>
+    <>
         <Header />
         <Dashboard />
         <Footer />
-    </AuthProvider>
+    </>
   );
 }
 
